@@ -2,6 +2,7 @@ require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 const token = process.env.DISCORD_BOT_TOKEN;
 const VC_amount = 2;
+const NowVc = process.env.VC2;
 let loop_count = 0;
 const client = new Client({
   intents: [
@@ -14,7 +15,7 @@ const client = new Client({
 client.once("ready", async () => {
   const guild = client.guilds.cache.get(process.env.GUILD_ID); //ユーザーが居るサーバーの取得
   if (!guild) return; //サーバーが見つからなかったら処理を中止
-  const VC = await guild.channels.fetch(process.env.VC2);
+  const VC = await guild.channels.fetch(NowVc);
   //サーバーからユーザーの取得
   //vcにいるユーザー
   //全メンバーのお部ジェクト
