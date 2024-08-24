@@ -13,7 +13,8 @@ VC2
 VC3
 VC4
 VC5
-AFK```
+AFK
+```
 
 3. 分けるvcの数を4行目の```const VC_amount = 2;```書き換え
 3. 今いるvcを5行目の```const NowVc = process.env.VC1;```書き換え
