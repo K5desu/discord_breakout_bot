@@ -15,6 +15,6 @@ VC4=""
 VC5=""
 ```
 
-3. 分けるvcの数を4行目の```const VC_amount = 2;```書き換え
-3. 今いるvcを5行目の```const NowVc = process.env.VC1;```書き換え
+3. 分けるvcの数をindex.js4行目の```const VC_amount = 2;```書き換え
+3. 今いるvcをindex.js5行目の```const NowVc = process.env.VC1;```書き換え
 4. npm run startで分けられる！！
