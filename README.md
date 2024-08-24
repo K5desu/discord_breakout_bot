@@ -4,16 +4,15 @@ nodeのインストールが済んでいることが前提です
 ## 環境構築
 1. このリポジトリをクローンし、npm i
 2. .envファイルをルート階層に作成し、必要情報を記入
-```CHANNNEL_ID
-DISCORD_BOT_TOKEN
-GUILD_ID
-PODCAST
-VC1
-VC2
-VC3
-VC4
-VC5
-AFK
+```CHANNNEL_ID=""
+DISCORD_BOT_TOKEN=""
+GUILD_ID=""
+PODCAST=""
+VC1=""
+VC2=""
+VC3=""
+VC4=""
+VC5=""
 ```
 
 3. 分けるvcの数を4行目の```const VC_amount = 2;```書き換え
