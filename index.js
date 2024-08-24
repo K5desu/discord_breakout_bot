@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 const token = process.env.DISCORD_BOT_TOKEN;
 const VC_amount = 2;
-const NowVc = process.env.VC2;
+const NowVc = process.env.VC1;
 let loop_count = 0;
 const client = new Client({
   intents: [
