@@ -7,18 +7,18 @@
 2. プロジェクトディレクトリのルートに`.env`を新規作成し、下記を書き込み、`""`のダブルクオーテーションの中にそれぞれのIDを記入する。
 
 ```
-//DiscordのBotのToken
+#DiscordのBotのToken
 DISCORD_BOT_TOKEN=""
-//該当のDiscordServerのID
+#該当のDiscordServerのID
 GUILD_ID=""
-//以下対応するチャンネルのIDを記入
+#以下対応するチャンネルのIDを記入
 PODCAST=""
 VC1=""
 VC2=""
 VC3=""
 VC4=""
 VC5=""
-//これらのGUILD_ID, 書くチャンネルのIDはDiscordを取得するにはユーザー設定にてDeveloperModeに変更する必要がある。
+#これらのGUILD_ID, 書くチャンネルのIDはDiscordを取得するにはユーザー設定にてDeveloperModeに変更する必要がある。
 ```
 
 3. index.js4行目の`const VC_amount = 2;`の数字を分けるVCの数に適宜書き換える
