@@ -26,7 +26,7 @@ client.once("ready", async () => {
   }
   //ぐちゃぐちゃになったメンバーのオブジェクト
   membersArray.forEach((member) => {
-  console.log(member.user.username);
+   console.log(member.nickname);
     if (loop_count % VC_amount == 0) {
       member.voice.setChannel(process.env.VC1); //memberのオブジェクトに
     } else if (loop_count % VC_amount == 1) {
