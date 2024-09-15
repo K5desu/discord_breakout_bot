@@ -21,7 +21,7 @@ client.once("ready", async () => {
     [membersArray[i], membersArray[j]] = [membersArray[j], membersArray[i]];
   }
   membersArray.forEach((member) => {
-    console.log(member.user.username);
+    console.log(member.nickname);
     if (loop_count % VC_amount == 0) {
       member.voice.setChannel(process.env.VC1);
     } else if (loop_count % VC_amount == 1) {
@@ -32,8 +32,19 @@ client.once("ready", async () => {
       member.voice.setChannel(process.env.VC4); //memberのオブジェクトに
     } else if (loop_count % VC_amount == 4) {
       member.voice.setChannel(process.env.VC5); //memberのオブジェクトに
+    } else if (loop_count % VC_amount == 5) {
+      member.voice.setChannel(process.env.VC6); //memberのオブジェクトに
+    } else if (loop_count % VC_amount == 6) {
+      member.voice.setChannel(process.env.VC7); //memberのオブジェクトに
+    } else if (loop_count % VC_amount == 7) {
+      member.voice.setChannel(process.env.VC8); //memberのオブジェクトに
+    } else if (loop_count % VC_amount == 8) {
+      member.voice.setChannel(process.env.VC9); //memberのオブジェクトに
+    } else if (loop_count % VC_amount == 9) {
+      member.voice.setChannel(process.env.VC10); //member
     }
     loop_count++;
+    console.log(loop_count);
   });
 });
 
