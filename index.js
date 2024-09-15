@@ -21,7 +21,9 @@ client.once("ready", async () => {
     [membersArray[i], membersArray[j]] = [membersArray[j], membersArray[i]];
   }
   membersArray.forEach((member) => {
-    console.log(member.nickname);
+
+   console.log(member.nickname);
+
     if (loop_count % VC_amount == 0) {
       member.voice.setChannel(process.env.VC1);
     } else if (loop_count % VC_amount == 1) {
