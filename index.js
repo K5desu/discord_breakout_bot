@@ -34,6 +34,7 @@ client.once("ready", async () => {
       member.voice.setChannel(process.env.VC5); //memberのオブジェクトに
     }
     loop_count++;
+    console.log(loop_count);
   });
 });
 
